@@ -4,24 +4,24 @@ import java.awt.*;
 
 public class AddressBookData {
 
-    private String phone;
+    private int personId;
     private String firstName;
     private String lastName;
 
     public AddressBookData() { }
 
-    public AddressBookData(String phone, AddressBookDTO addressBookDTO) {
-        this.phone = phone;
+    public AddressBookData(int personId, AddressBookDTO addressBookDTO) {
+        this.personId = personId;
         this.firstName = addressBookDTO.firstName;
         this.lastName = addressBookDTO.lastName;
     }
 
-    public String getPhone() {
-        return phone;
+    public int getPersonId() {
+        return personId;
     }
 
-    public void setPhone(String phone) {
-        this.phone = phone;
+    public void setPersonId(int personId) {
+        this.personId = personId;
     }
 
     public String getFirstName() {
