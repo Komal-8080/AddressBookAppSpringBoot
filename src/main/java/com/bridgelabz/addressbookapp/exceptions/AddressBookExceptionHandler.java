@@ -12,7 +12,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 @ControllerAdvice
-public class EmployeePayrollExceptionHandler {
+public class AddressBookExceptionHandler {
 
     @ExceptionHandler(MethodArgumentNotValidException.class)
     public ResponseEntity<ResponseDTO> handleMethodArgumentNotValidException(MethodArgumentNotValidException exception) {
@@ -22,5 +22,12 @@ public class EmployeePayrollExceptionHandler {
                                 .collect(Collectors.toList());
         ResponseDTO responseDTO = new ResponseDTO("Exception While Processing Rest Request", errMesg);
         return new ResponseEntity<ResponseDTO>(responseDTO, HttpStatus.BAD_REQUEST);
+    }
+
+    @ExceptionHandler(AddressBookException.class)
+    public ResponseEntity<ResponseDTO> handleEmployeePayrollExcept(AddressBookException exception) {
+        ResponseDTO responseDTO = new ResponseDTO("Exception While Processing REST Request",
+                exception.getMessage());
+        return  new ResponseEntity<ResponseDTO>(responseDTO,HttpStatus.BAD_REQUEST);
     }
 }
