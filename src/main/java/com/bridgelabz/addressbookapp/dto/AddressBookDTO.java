@@ -1,8 +1,6 @@
 package com.bridgelabz.addressbookapp.dto;
 
 import lombok.ToString;
-import org.hibernate.validator.constraints.Range;
-
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Pattern;
 
