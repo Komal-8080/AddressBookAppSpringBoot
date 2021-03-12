@@ -1,7 +1,7 @@
 package com.bridgelabz.addressbookapp.services;
 
 import com.bridgelabz.addressbookapp.dto.AddressBookDTO;
-import com.bridgelabz.addressbookapp.dto.AddressBookData;
+import com.bridgelabz.addressbookapp.model.AddressBookData;
 
 import java.util.List;
 
