@@ -13,7 +13,7 @@ public @Data class AddressBookData {
     private String address;
     private String city;
     private String state;
-    private long zip;
+    private String zip;
     private String phone;
     private String email;
 
